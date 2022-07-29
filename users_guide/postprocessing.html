@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Analyzing Your Results &#8212; pyfluent-visualization</title>
+    <title>Analyzing your results &#8212; pyfluent-visualization</title>
     
 <script>
   document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
@@ -53,8 +53,8 @@
     <link rel="shortcut icon" href="../_static/ansys-favicon.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="API Reference" href="../api/index.html" />
-    <link rel="prev" title="User Guide" href="index.html" />
+    <link rel="next" title="API reference" href="../api/index.html" />
+    <link rel="prev" title="User guide" href="index.html" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="docsearch:language" content="None">
   </head>
@@ -101,19 +101,19 @@
         <ul id="navbar-main-elements" class="navbar-nav">
     <li class="toctree-l1 nav-item">
  <a class="reference internal nav-link" href="../getting_started/index.html">
-  Getting Started
+  Getting started
  </a>
 </li>
 
 <li class="toctree-l1 current active nav-item">
  <a class="reference internal nav-link" href="index.html">
-  User Guide
+  User guide
  </a>
 </li>
 
 <li class="toctree-l1 nav-item">
  <a class="reference internal nav-link" href="../api/index.html">
-  API Reference
+  API reference
  </a>
 </li>
 
@@ -175,8 +175,8 @@
         <li class="nav-item nav-item-0"><a href="../index.html">pyfluent-visualization</a> » </li>
     
 
-          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">User Guide</a> » </li>
-        <li class="nav-item nav-item-this"><a href="">Analyzing Your Results</a></li> 
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">User guide</a> » </li>
+        <li class="nav-item nav-item-this"><a href="">Analyzing your results</a></li> 
       </ul>
     </div>
         </div>
@@ -199,7 +199,7 @@
     <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Analyzing Your Results
+   Analyzing your results
   </a>
  </li>
 </ul>
@@ -228,49 +228,49 @@
     <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#rendering-graphics-objects">
-   Rendering Graphics Objects
+   Rendering graphics objects
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#displaying-mesh-objects">
-     Displaying Mesh Objects
+     Displaying mesh objects
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#displaying-iso-surfaces">
-     Displaying Iso-Surfaces
+     Displaying iso-surfaces
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#displaying-contours">
-     Displaying Contours
+     Displaying contours
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#displaying-vectors">
-     Displaying Vectors
+     Displaying vectors
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#plotting-your-data">
-   Plotting Your Data
+   Plotting your data
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#displaying-xy-plots">
-     Displaying XY Plots
+     Displaying XY plots
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#plotting-residual">
-     Plotting Residual
+    <a class="reference internal nav-link" href="#plotting-residual-plots">
+     Plotting residual plots
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#plotting-solution-minitors">
-     Plotting Solution Minitors
+    <a class="reference internal nav-link" href="#plotting-solution-monitors">
+     Plotting solution monitors
     </a>
    </li>
   </ul>
@@ -295,14 +295,14 @@
               <article class="bd-article" role="main">
                 
   <section id="analyzing-your-results">
-<h1>Analyzing Your Results<a class="headerlink" href="#analyzing-your-results" title="Permalink to this headline">#</a></h1>
+<h1>Analyzing your results<a class="headerlink" href="#analyzing-your-results" title="Permalink to this headline">#</a></h1>
 <p>PyFluent postprocessing supports graphics and plotting.</p>
 <section id="rendering-graphics-objects">
-<h2>Rendering Graphics Objects<a class="headerlink" href="#rendering-graphics-objects" title="Permalink to this headline">#</a></h2>
+<h2>Rendering graphics objects<a class="headerlink" href="#rendering-graphics-objects" title="Permalink to this headline">#</a></h2>
 <p>The visualization package library is used for rendering graphics objects.
 The following graphics operations are supported.</p>
 <section id="displaying-mesh-objects">
-<h3>Displaying Mesh Objects<a class="headerlink" href="#displaying-mesh-objects" title="Permalink to this headline">#</a></h3>
+<h3>Displaying mesh objects<a class="headerlink" href="#displaying-mesh-objects" title="Permalink to this headline">#</a></h3>
 <p>The following example demonstrates how you can display the mesh object:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">ansys.fluent.core</span> <span class="k">as</span> <span class="nn">pyfluent</span>
 <span class="kn">from</span> <span class="nn">ansys.fluent.core</span> <span class="kn">import</span> <span class="n">examples</span>
@@ -342,7 +342,7 @@ The following graphics operations are supported.</p>
 </div>
 </section>
 <section id="displaying-iso-surfaces">
-<h3>Displaying Iso-Surfaces<a class="headerlink" href="#displaying-iso-surfaces" title="Permalink to this headline">#</a></h3>
+<h3>Displaying iso-surfaces<a class="headerlink" href="#displaying-iso-surfaces" title="Permalink to this headline">#</a></h3>
 <p>The following example demonstrates how you can display the iso-surface:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">surf_outlet_plane</span> <span class="o">=</span> <span class="n">graphics</span><span class="o">.</span><span class="n">Surfaces</span><span class="p">[</span><span class="s2">&quot;outlet-plane&quot;</span><span class="p">]</span>
 <span class="n">surf_outlet_plane</span><span class="o">.</span><span class="n">surface</span><span class="o">.</span><span class="n">type</span> <span class="o">=</span> <span class="s2">&quot;iso-surface&quot;</span>
@@ -354,7 +354,7 @@ The following graphics operations are supported.</p>
 </div>
 </section>
 <section id="displaying-contours">
-<h3>Displaying Contours<a class="headerlink" href="#displaying-contours" title="Permalink to this headline">#</a></h3>
+<h3>Displaying contours<a class="headerlink" href="#displaying-contours" title="Permalink to this headline">#</a></h3>
 <p>The following example demonstrates how you can display the contour object:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">temperature_contour_manifold</span> <span class="o">=</span> <span class="n">graphics</span><span class="o">.</span><span class="n">Contours</span><span class="p">[</span><span class="s2">&quot;contour-temperature-manifold&quot;</span><span class="p">]</span>
 <span class="n">temperature_contour_manifold</span><span class="o">.</span><span class="n">field</span> <span class="o">=</span> <span class="s2">&quot;temperature&quot;</span>
@@ -371,7 +371,7 @@ The following graphics operations are supported.</p>
 </div>
 </section>
 <section id="displaying-vectors">
-<h3>Displaying Vectors<a class="headerlink" href="#displaying-vectors" title="Permalink to this headline">#</a></h3>
+<h3>Displaying vectors<a class="headerlink" href="#displaying-vectors" title="Permalink to this headline">#</a></h3>
 <p>The following example demonstrates how you can display the vector object:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">velocity_vector</span> <span class="o">=</span> <span class="n">graphics</span><span class="o">.</span><span class="n">Vectors</span><span class="p">[</span><span class="s2">&quot;velocity-vector&quot;</span><span class="p">]</span>
 <span class="n">velocity_vector</span><span class="o">.</span><span class="n">surfaces_list</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;outlet-plane&quot;</span><span class="p">]</span>
@@ -382,11 +382,11 @@ The following graphics operations are supported.</p>
 </section>
 </section>
 <section id="plotting-your-data">
-<h2>Plotting Your Data<a class="headerlink" href="#plotting-your-data" title="Permalink to this headline">#</a></h2>
+<h2>Plotting your data<a class="headerlink" href="#plotting-your-data" title="Permalink to this headline">#</a></h2>
 <p>The following plotting operations are supported.</p>
 <section id="displaying-xy-plots">
-<h3>Displaying XY Plots<a class="headerlink" href="#displaying-xy-plots" title="Permalink to this headline">#</a></h3>
-<p>The following example demonstrates how you can display the xy plot:</p>
+<h3>Displaying XY plots<a class="headerlink" href="#displaying-xy-plots" title="Permalink to this headline">#</a></h3>
+<p>The following example demonstrates how you can display the XY plot:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">plots_session_1</span> <span class="o">=</span> <span class="n">Plots</span><span class="p">(</span><span class="n">session</span><span class="p">)</span>
 <span class="n">xy_plot</span> <span class="o">=</span> <span class="n">plots_session_1</span><span class="o">.</span><span class="n">XYPlots</span><span class="p">[</span><span class="s2">&quot;xy-plot&quot;</span><span class="p">]</span>
 <span class="n">xy_plot</span><span class="o">.</span><span class="n">surfaces_list</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;outlet&quot;</span><span class="p">]</span>
@@ -395,9 +395,10 @@ The following graphics operations are supported.</p>
 </pre></div>
 </div>
 </section>
-<section id="plotting-residual">
-<h3>Plotting Residual<a class="headerlink" href="#plotting-residual" title="Permalink to this headline">#</a></h3>
-<p>The following example demonstrates how you can plot solution residual:</p>
+<section id="plotting-residual-plots">
+<h3>Plotting residual plots<a class="headerlink" href="#plotting-residual-plots" title="Permalink to this headline">#</a></h3>
+<p>The following example demonstrates how you can plot solution residual
+plots:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">matplotlib_plots1</span> <span class="o">=</span> <span class="n">Plots</span><span class="p">(</span><span class="n">session</span><span class="p">)</span>
 <span class="n">residual</span> <span class="o">=</span> <span class="n">matplotlib_plots1</span><span class="o">.</span><span class="n">Monitors</span><span class="p">[</span><span class="s2">&quot;residual&quot;</span><span class="p">]</span>
 <span class="n">residual</span><span class="o">.</span><span class="n">monitor_set_name</span> <span class="o">=</span> <span class="s2">&quot;residual&quot;</span>
@@ -405,8 +406,8 @@ The following graphics operations are supported.</p>
 </pre></div>
 </div>
 </section>
-<section id="plotting-solution-minitors">
-<h3>Plotting Solution Minitors<a class="headerlink" href="#plotting-solution-minitors" title="Permalink to this headline">#</a></h3>
+<section id="plotting-solution-monitors">
+<h3>Plotting solution monitors<a class="headerlink" href="#plotting-solution-monitors" title="Permalink to this headline">#</a></h3>
 <p>The following example demonstrates how you can plot solution monitors:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">solver</span><span class="o">.</span><span class="n">tui</span><span class="o">.</span><span class="n">solve</span><span class="o">.</span><span class="n">initialize</span><span class="o">.</span><span class="n">hyb_initialization</span><span class="p">()</span>
 <span class="n">session</span><span class="o">.</span><span class="n">solver</span><span class="o">.</span><span class="n">tui</span><span class="o">.</span><span class="n">solve</span><span class="o">.</span><span class="n">set</span><span class="o">.</span><span class="n">number_of_iterations</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>

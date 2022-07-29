@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>User Guide &#8212; pyfluent-visualization</title>
+    <title>User guide &#8212; pyfluent-visualization</title>
     
 <script>
   document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
@@ -53,8 +53,8 @@
     <link rel="shortcut icon" href="../_static/ansys-favicon.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Analyzing Your Results" href="postprocessing.html" />
-    <link rel="prev" title="Getting Started" href="../getting_started/index.html" />
+    <link rel="next" title="Analyzing your results" href="postprocessing.html" />
+    <link rel="prev" title="Getting started" href="../getting_started/index.html" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="docsearch:language" content="None">
   </head>
@@ -101,19 +101,19 @@
         <ul id="navbar-main-elements" class="navbar-nav">
     <li class="toctree-l1 nav-item">
  <a class="reference internal nav-link" href="../getting_started/index.html">
-  Getting Started
+  Getting started
  </a>
 </li>
 
 <li class="toctree-l1 current active nav-item">
  <a class="current reference internal nav-link" href="#">
-  User Guide
+  User guide
  </a>
 </li>
 
 <li class="toctree-l1 nav-item">
  <a class="reference internal nav-link" href="../api/index.html">
-  API Reference
+  API reference
  </a>
 </li>
 
@@ -175,7 +175,7 @@
         <li class="nav-item nav-item-0"><a href="../index.html">pyfluent-visualization</a> » </li>
     
 
-        <li class="nav-item nav-item-this"><a href="">User Guide</a></li> 
+        <li class="nav-item nav-item-this"><a href="">User guide</a></li> 
       </ul>
     </div>
         </div>
@@ -198,7 +198,7 @@
     <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="postprocessing.html">
-   Analyzing Your Results
+   Analyzing your results
   </a>
  </li>
 </ul>
@@ -226,8 +226,8 @@
 <nav id="bd-toc-nav">
     <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#pyfluent-basic-overview">
-   PyFluent Basic Overview
+  <a class="reference internal nav-link" href="#pyfluent-overview">
+   PyFluent overview
   </a>
  </li>
 </ul>
@@ -250,13 +250,13 @@
               <article class="bd-article" role="main">
                 
   <section id="user-guide">
-<span id="ref-user-guide"></span><h1>User Guide<a class="headerlink" href="#user-guide" title="Permalink to this headline">#</a></h1>
-<p>This guide provides information regarding using Ansys PyFluent and its
+<span id="ref-user-guide"></span><h1>User guide<a class="headerlink" href="#user-guide" title="Permalink to this headline">#</a></h1>
+<p>This guide provides information regarding using PyFluent and its
 constituent modules and components.</p>
 <div class="toctree-wrapper compound">
 </div>
-<section id="pyfluent-basic-overview">
-<h2>PyFluent Basic Overview<a class="headerlink" href="#pyfluent-basic-overview" title="Permalink to this headline">#</a></h2>
+<section id="pyfluent-overview">
+<h2>PyFluent overview<a class="headerlink" href="#pyfluent-overview" title="Permalink to this headline">#</a></h2>
 <p>Session objects are the main entry point when using the PyFluent library, where
 one or more Fluent server sessions can be launched simultaneously from the
 client. For example:</p>
@@ -268,7 +268,7 @@ client. For example:</p>
 </pre></div>
 </div>
 <p>Each session object provides access to multiple services, such as boundary
-contitions, meshing workflows, field data properties, and so forth.</p>
+conditions, meshing workflows, field data properties, and so forth.</p>
 <p>PyFluent contains several basic service modules that provide access to core
 Fluent capabilities.</p>
 <blockquote>
@@ -276,7 +276,7 @@ Fluent capabilities.</p>
 <li><p>General command and query services are encompassed in three modules:</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>The ‘tui’ modules are a collection of Python wrappers around the
+<li><p>The <code class="docutils literal notranslate"><span class="pre">tui</span></code> module is a collection of Python wrappers around
 Fluent’s traditional Text User Interface (TUI) command-based
 infrastructure.</p></li>
 </ul>
@@ -284,7 +284,7 @@ infrastructure.</p></li>
 </pre></div>
 </div>
 <ul class="simple">
-<li><p>The ‘settings’ module is a Pythonic interface to access Fluent’s setup
+<li><p>The <code class="docutils literal notranslate"><span class="pre">settings</span></code> module is a Pythonic interface to access Fluent’s setup
 and solution objects, where you can, for instance, enable a
 physics-based model for your simulation.</p></li>
 </ul>
@@ -292,23 +292,23 @@ physics-based model for your simulation.</p></li>
 </pre></div>
 </div>
 <ul class="simple">
-<li><p>The ‘datamodel’ module is a Python interface to access the
-datamodel-driven aspects of Fluent, such as the meshing workflows.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">datamodel</span></code> module is a Python interface to access the
+data model-driven aspects of Fluent, such as the meshing workflows.</p></li>
 </ul>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">import_geometry</span><span class="o">.</span><span class="n">arguments</span><span class="o">.</span><span class="n">update_dict</span><span class="p">({</span><span class="s1">&#39;AppendMesh&#39;</span><span class="p">:</span><span class="kc">True</span><span class="p">})</span>
 </pre></div>
 </div>
 </div></blockquote>
 </li>
-<li><p>Surface field and mesh data services are available using the ‘field_data’
-module, such as obtaining surface data for a specified surface.</p></li>
+<li><p>Surface field and mesh data services are available using <code class="docutils literal notranslate"><span class="pre">field_data</span></code>
+methods, such as the one for getting the surface data for a specified surface.</p></li>
 </ul>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>surface_data = field_data.get_surfaces(surface_ids)​
 </pre></div>
 </div>
 <ul class="simple">
-<li><p>There are general modules available, such as ‘health_check’, ‘transcript’,
-and ‘events’ that provide access to generic features that are useful to
+<li><p>There are general methods available, such as <code class="docutils literal notranslate"><span class="pre">health_check</span></code>, <code class="docutils literal notranslate"><span class="pre">transcript</span></code>,
+and <code class="docutils literal notranslate"><span class="pre">events</span></code> that provide access to generic features that are useful for
 running your simulation. For instance,</p></li>
 </ul>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>health_check_service.check_health()​​
@@ -323,8 +323,7 @@ running your simulation. For instance,</p></li>
 </pre></div>
 </div>
 <ul class="simple">
-<li><p>Finally, there is a ‘scheme_eval’ module that provides access to Scheme
-function evaluation. For instance,</p></li>
+<li><p>Finally, there is a <code class="docutils literal notranslate"><span class="pre">scheme_eval</span></code> method that provides for evaluating the scheme.</p></li>
 </ul>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>scheme_eval.string_eval(&quot;(rp-unsteady?)&quot;)​
 </pre></div>

@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>PyVista Windows Manager &#8212; pyfluent-visualization</title>
+    <title>PyVista windows manager &#8212; pyfluent-visualization</title>
     
 <script>
   document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
@@ -53,7 +53,7 @@
     <link rel="shortcut icon" href="../../_static/ansys-favicon.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Matplot Windows Manager" href="matplot_windows_manager.html" />
+    <link rel="next" title="Matplotlib windows manager" href="matplot_windows_manager.html" />
     <link rel="prev" title="MonitorPlot" href="monitorplot.html" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="docsearch:language" content="None">
@@ -101,19 +101,19 @@
         <ul id="navbar-main-elements" class="navbar-nav">
     <li class="toctree-l1 nav-item">
  <a class="reference internal nav-link" href="../../getting_started/index.html">
-  Getting Started
+  Getting started
  </a>
 </li>
 
 <li class="toctree-l1 nav-item">
  <a class="reference internal nav-link" href="../../users_guide/index.html">
-  User Guide
+  User guide
  </a>
 </li>
 
 <li class="toctree-l1 current active nav-item">
  <a class="reference internal nav-link" href="../index.html">
-  API Reference
+  API reference
  </a>
 </li>
 
@@ -175,10 +175,10 @@
         <li class="nav-item nav-item-0"><a href="../../index.html">pyfluent-visualization</a> » </li>
     
 
-          <li class="nav-item nav-item-1"><a href="../index.html" >API Reference</a> » </li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >API reference</a> » </li>
           <li class="nav-item nav-item-2"><a href="index.html" >Visualization</a> » </li>
           <li class="nav-item nav-item-3"><a href="post_objects.html" accesskey="U">&lt;no title&gt;</a> » </li>
-        <li class="nav-item nav-item-this"><a href="">PyVista Windows Manager</a></li> 
+        <li class="nav-item nav-item-this"><a href="">PyVista windows manager</a></li> 
       </ul>
     </div>
         </div>
@@ -253,7 +253,7 @@
     <ul>
      <li class="toctree-l3">
       <a class="reference internal" href="xyplot.html">
-       XYPlot
+       XY plot
       </a>
      </li>
      <li class="toctree-l3">
@@ -265,12 +265,12 @@
    </li>
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     PyVista Windows Manager
+     PyVista windows manager
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="matplot_windows_manager.html">
-     Matplot Windows Manager
+     Matplotlib windows manager
     </a>
    </li>
   </ul>
@@ -314,14 +314,14 @@
               <article class="bd-article" role="main">
                 
   <section id="pyvista-windows-manager">
-<span id="ref-pyvista-windows-manager"></span><h1>PyVista Windows Manager<a class="headerlink" href="#pyvista-windows-manager" title="Permalink to this headline">#</a></h1>
+<span id="ref-pyvista-windows-manager"></span><h1>PyVista windows manager<a class="headerlink" href="#pyvista-windows-manager" title="Permalink to this headline">#</a></h1>
 <p>This class manages <cite>PyVista</cite> windows and provides methods to directly interact with them.
 By registering these methods to EventsManager, graphics can be updated during run
 time and animations can be created.</p>
-<p>The following example will update <cite>window-1</cite> during solution initialization and whenever data
-is read. Also during calculation it will update <cite>window-1</cite> at end of every time step and
-will create animation.</p>
-<p><cite>Important</cite>:Animation will be saved whenever window is closed.</p>
+<p>The following example updates <cite>window-1</cite> during solution initialization and whenever data
+is read. During the calculation, it also updates <cite>window-1</cite> at the end of every time step
+and creates an animation.</p>
+<p><cite>Important</cite>:The animation is saved when the window is closed.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">ansys.fluent.visualization.pyvista</span> <span class="kn">import</span> <span class="n">Graphics</span>
 <span class="kn">from</span> <span class="nn">ansys.fluent.visualization.pyvista</span> <span class="kn">import</span> <span class="n">pyvista_windows_manager</span>
 
