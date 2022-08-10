@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Plots &#8212; pyfluent-visualization</title>
+    <title>Plots &#8212; PyFluent-Visualization</title>
     
 <script>
   document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
@@ -172,7 +172,7 @@
         <li class="nav-item nav-item-additional-breadcrumb"><a href="https://docs.pyansys.com/">PyAnsys</a> » </li>
     
     
-        <li class="nav-item nav-item-0"><a href="../../index.html">pyfluent-visualization</a> » </li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">PyFluent-Visualization</a> » </li>
     
 
           <li class="nav-item nav-item-1"><a href="../index.html" >API reference</a> » </li>
@@ -318,15 +318,22 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="ansys.fluent.visualization.matplotlib.matplot_objects.Plots">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ansys.fluent.visualization.matplotlib.matplot_objects.</span></span><span class="sig-name descname"><span class="pre">Plots</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">session</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">local_surfaces_provider</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.fluent.visualization.matplotlib.matplot_objects.Plots" title="Permalink to this definition">#</a></dt>
-<dd><p>Matplotlib Plot objects manager.</p>
-<p>It provides access to plot object containers for a given session,
-from which plot objects can be created.
-It takes session object as argument. Additionally local surface provider
-can also be passed to access surfaces created in other modules e.g. pyVista.</p>
+<dd><p>Provides the Matplotlib <code class="docutils literal notranslate"><span class="pre">Plots</span></code> objects manager.</p>
+<p>This class provides access to <code class="docutils literal notranslate"><span class="pre">Plots</span></code> object containers for a given
+session so that plots can be created.</p>
 <dl class="field-list">
-<dt class="field-odd">Attributes</dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl>
-<dt><strong>XYPlots</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#dict" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">dict</span></code></a></span></dt><dd><p>Container for xyplot objects.</p>
+<dt><strong>session</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">obj</span></code></span></dt><dd><p>Session object.</p>
+</dd>
+<dt><strong>local_surfaces_provider</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/dev/library/functions.html#object" title="(in Python v3.12)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">optional</span></code></span></dt><dd><p>Object providing local surfaces so that you can access surfaces
+created in other modules, such as PyVista. The default is <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Attributes</dt>
+<dd class="field-even"><dl>
+<dt><strong>XYPlots</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#dict" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">dict</span></code></a></span></dt><dd><p>Container for XY plot objects.</p>
 </dd>
 <dt><strong>MonitorPlots</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#dict" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">dict</span></code></a></span></dt><dd><p>Container for monitor plot objects.</p>
 </dd>
@@ -335,9 +342,9 @@ can also be passed to access surfaces created in other modules e.g. pyVista.</p>
 </dl>
 </dd></dl>
 
-<p>In the following example, a <code class="docutils literal notranslate"><span class="pre">plots</span></code> object is instantiated with a Fluent session
-as its context. The <code class="docutils literal notranslate"><span class="pre">plots</span></code> object is used to create and display an XY plot and
-monitor plots.</p>
+<p>In the following example, a <code class="docutils literal notranslate"><span class="pre">Plots</span></code> object is instantiated with a Fluent session
+as its context. The <code class="docutils literal notranslate"><span class="pre">Plots</span></code> object is used to generate and plot two XY plots and
+a monitor plot.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">ansys.fluent.visualization.matplotlib</span> <span class="kn">import</span> <span class="n">Plots</span>
 
 <span class="n">plots_session</span> <span class="o">=</span> <span class="n">Plots</span><span class="p">(</span><span class="n">session</span><span class="p">)</span>
@@ -347,7 +354,7 @@ monitor plots.</p>
 <span class="n">plot1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="s2">&quot;window-0&quot;</span><span class="p">)</span>
 
 
-<span class="c1">#To plot data on local surface created in pyVista</span>
+<span class="c1">#To plot data on local surface created in PyVista</span>
 
 <span class="kn">from</span> <span class="nn">ansys.fluent.visualization.pyvista</span> <span class="kn">import</span>  <span class="n">Graphics</span>
 <span class="n">pyvista_surface_provider</span> <span class="o">=</span> <span class="n">Graphics</span><span class="p">(</span><span class="n">session</span><span class="p">)</span><span class="o">.</span><span class="n">Surfaces</span>

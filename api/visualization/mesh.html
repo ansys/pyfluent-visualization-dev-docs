@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Mesh &#8212; pyfluent-visualization</title>
+    <title>Mesh &#8212; PyFluent-Visualization</title>
     
 <script>
   document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
@@ -172,7 +172,7 @@
         <li class="nav-item nav-item-additional-breadcrumb"><a href="https://docs.pyansys.com/">PyAnsys</a> » </li>
     
     
-        <li class="nav-item nav-item-0"><a href="../../index.html">pyfluent-visualization</a> » </li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">PyFluent-Visualization</a> » </li>
     
 
           <li class="nav-item nav-item-1"><a href="../index.html" >API reference</a> » </li>
@@ -319,16 +319,23 @@
 <span class="target" id="post-mesh"></span><dl class="py class">
 <dt class="sig sig-object py" id="ansys.fluent.visualization.pyvista.pyvista_objects.Mesh">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ansys.fluent.visualization.pyvista.pyvista_objects.</span></span><span class="sig-name descname"><span class="pre">Mesh</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parent</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">api_helper</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.fluent.visualization.pyvista.pyvista_objects.Mesh" title="Permalink to this definition">#</a></dt>
-<dd><p>Mesh graphics.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">ansys.fluent.visualization.pyvista</span> <span class="kn">import</span>  <span class="n">Graphics</span>
-
-<span class="n">graphics_session</span> <span class="o">=</span> <span class="n">Graphics</span><span class="p">(</span><span class="n">session</span><span class="p">)</span>
-<span class="n">mesh1</span> <span class="o">=</span> <span class="n">graphics_session</span><span class="o">.</span><span class="n">Meshes</span><span class="p">[</span><span class="s2">&quot;mesh-1&quot;</span><span class="p">]</span>
-<span class="n">mesh1</span><span class="o">.</span><span class="n">show_edges</span> <span class="o">=</span> <span class="kc">True</span>
-<span class="n">mesh1</span><span class="o">.</span><span class="n">surfaces_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;wall&#39;</span><span class="p">]</span>
-<span class="n">mesh1</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="s2">&quot;window-0&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
+<dd><p>Provides for displaying mesh graphics.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl>
+<dt><strong>name</strong></dt><dd></dd>
+<dt><strong>parent</strong></dt><dd></dd>
+<dt><strong>api_helper</strong></dt><dd></dd>
+<dt><strong>.. code-block:: python</strong></dt><dd><p>from ansys.fluent.visualization.pyvista import  Graphics</p>
+<p>graphics_session = Graphics(session)
+mesh1 = graphics_session.Meshes[“mesh-1”]
+mesh1.show_edges = True
+mesh1.surfaces_list = [‘wall’]
+mesh1.display(“window-0”)</p>
+</dd>
+</dl>
+</dd>
+</dl>
 <p class="rubric">Attributes</p>
 <table class="table">
 <colgroup>

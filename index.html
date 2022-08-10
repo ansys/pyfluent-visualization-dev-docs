@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>PyFluent-Visualization documentation 0.4.0 &#8212; pyfluent-visualization</title>
+    <title>PyFluent-Visualization documentation 0.4.0 &#8212; PyFluent-Visualization</title>
     
 <script>
   document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
@@ -221,16 +221,6 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#what-is-pyfluent">
-   What is PyFluent?
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#features">
-   Features
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#documentation-and-issues">
    Documentation and issues
   </a>
@@ -270,63 +260,37 @@
 </div>
 <section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h2>
-<p>Ansys Fluent is a state-of-the-art computational fluid dynamics (CFD) software
-package for modeling fluid flow, heat transfer, and chemical reactions in
-complex geometries.</p>
-<p>Ansys Fluent provides complete mesh flexibility, including the ability to solve
-your flow problems using unstructured meshes that can be generated about complex
-geometries with relative ease. Supported mesh types include 2D
-triangular/quadrilateral, 3D tetrahedral/hexahedral/pyramid/wedge/polyhedral,
-and mixed (hybrid) meshes. Ansys Fluent also enables you to refine or coarsen
-your mesh based on the flow solution.</p>
-<p>You can read your mesh into Ansys Fluent, or, for 3D geometries, create your
-mesh using the meshing mode of Fluent. All other operations are performed within
-the solution mode of Fluent, including setting boundary conditions, defining
-fluid properties, executing the solution, refining the mesh, running a parametric study,
-and postprocessing and viewing the results.</p>
-</section>
-<section id="what-is-pyfluent">
-<h2>What is PyFluent?<a class="headerlink" href="#what-is-pyfluent" title="Permalink to this headline">#</a></h2>
-<p>PyFluent is part of the <a class="reference external" href="https://docs.pyansys.com">PyAnsys</a> ecosystem that
-lets you use Ansys Fluent within or alongside any other Python environment,
-whether it is in conjunction with other Ansys Python libraries and packages or
-with other external Python products.</p>
-<p>PyFluent implements a client-server architecture. PyFluent launches or connects
-with a running Fluent process as a server using Google remote procedure calls,
-or gRPC interfaces, but all you need to interact with is the Python interface.</p>
-<p>You can use PyFluent to programmatically create, interact with and control an
-Ansys Fluent session to create your own customized workspace. In addition, you
-can use PyFluent to enhance your productivity with highly configurable,
-customized scripts.</p>
-</section>
-<section id="features">
-<h2>Features<a class="headerlink" href="#features" title="Permalink to this headline">#</a></h2>
-<p>The package, <code class="docutils literal notranslate"><span class="pre">ansys-fluent-visualization</span></code>, provides features such as:</p>
+<p>You can use PyFluent-Visualization to postprocess Fluent results
+to display graphics objects and plot data. With PyFluent-Visualization,
+you can:</p>
 <ul class="simple">
-<li><p>Script post processing using Fluent’s in-built post processing capabilities.
-See the <a class="reference internal" href="api/visualization/index.html#ref-visualization"><span class="std std-ref">Visualization</span></a> module for more information.</p></li>
-<li><p>Plotting of Fluent geometry and meshes using <a class="reference external" href="https://docs.pyvista.org">PyVista</a> from within a Python script or an
+<li><p>Script postprocessing using Fluent’s built-in postprocessing capabilities.
+For more information, see <a class="reference internal" href="api/visualization/index.html#ref-visualization"><span class="std std-ref">Visualization</span></a>.</p></li>
+<li><p>Plot Fluent geometry and meshes using <a class="reference external" href="https://docs.pyvista.org">PyVista</a> from within a Python script or an
 interactive <a class="reference external" href="https://jupyter.org/">Jupyter notebook</a>.</p></li>
-<li><p>Access to Fluent surface-based field data as Python objects via <a class="reference external" href="https://numpy.org/">numpy</a> arrays</p></li>
+<li><p>Access Fluent surface-based field data as Python objects via <a class="reference external" href="https://numpy.org/">NumPy</a> arrays.</p></li>
 </ul>
 </section>
 <section id="documentation-and-issues">
 <h2>Documentation and issues<a class="headerlink" href="#documentation-and-issues" title="Permalink to this headline">#</a></h2>
-<p>In addition to installation, usage, and contribution information, the PyFluent
-documentation provides API documentation, examples, and code guidelines.</p>
-<p>On the PyFluent Issues page, you can create issues to submit questions,
-report bugs, and request new features. To reach the project support team,
-email <a class="reference external" href="mailto:pyansys&#46;support&#37;&#52;&#48;ansys&#46;com">pyansys<span>&#46;</span>support<span>&#64;</span>ansys<span>&#46;</span>com</a>.</p>
+<p>In addition to installation and usage information, the PyFluent-Visualization
+documentation provides <a class="reference internal" href="api/index.html#api-reference"><span class="std std-ref">API reference</span></a>, <a class="reference internal" href="examples/index.html#examples"><span class="std std-ref">Examples</span></a>, and <a class="reference internal" href="contributing.html#contributing"><span class="std std-ref">Contributing</span></a>
+sections.</p>
+<p>On the <a class="reference external" href="https://github.com/pyansys/pyfluent-visualization/issues">PyFluent Visualization Issues</a>
+page, you can create issues to submit questions, reports burgs, and request new features. To reach
+the support team, email <a class="reference external" href="mailto:pyansys&#46;support&#37;&#52;&#48;ansys&#46;com">pyansys<span>&#46;</span>support<span>&#64;</span>ansys<span>&#46;</span>com</a>.</p>
 </section>
 <section id="license">
 <h2>License<a class="headerlink" href="#license" title="Permalink to this headline">#</a></h2>
-<p>PyFluent is licensed under the MIT license.</p>
-<p>This module makes no commercial claim over Ansys whatsoever. PyFluent extends
-the functionality of Ansys Fluent by adding an additional Python interface to
-Ansys Fluent without changing the core behavior or license of the original
-software. The use of the interactive control of PyFluent requires a legally
-licensed local copy of Ansys Fluent. For more information about Ansys Fluent,
-visit <a class="reference external" href="https://www.ansys.com/products/fluids/ansys-fluent">Ansys Fluent</a>.</p>
+<p>PyFluent-Visualization is licensed under the MIT license.</p>
+<p>PyFluent-Visualization makes no commercial claim over Ansys
+whatsoever. This tool extends the functionality of Ansys Fluent
+by adding a Python interface to Fluent without changing the
+core behavior or license of the original software. The use of the
+interactive Fluent control of PyFluent-Visualization requires
+a legally licensed local copy of Fluent.</p>
+<p>For more information about Fluent, visit the <a class="reference external" href="https://www.ansys.com/products/fluids/ansys-fluent">Fluent</a>
+page on the Ansys website.</p>
 </section>
 <section id="project-index">
 <h2>Project index<a class="headerlink" href="#project-index" title="Permalink to this headline">#</a></h2>

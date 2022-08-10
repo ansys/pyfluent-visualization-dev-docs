@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Contributing &#8212; pyfluent-visualization</title>
+    <title>Contributing &#8212; PyFluent-Visualization</title>
     
 <script>
   document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
@@ -171,7 +171,7 @@
         <li class="nav-item nav-item-additional-breadcrumb"><a href="https://docs.pyansys.com/">PyAnsys</a> » </li>
     
     
-        <li class="nav-item nav-item-0"><a href="index.html">pyfluent-visualization</a> » </li>
+        <li class="nav-item nav-item-0"><a href="index.html">PyFluent-Visualization</a> » </li>
     
 
         <li class="nav-item nav-item-this"><a href="">Contributing</a></li> 
@@ -218,23 +218,23 @@
 <nav id="bd-toc-nav">
     <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#cloning-the-repository">
-   Cloning the repository
+  <a class="reference internal nav-link" href="#clone-the-repository">
+   Clone the repository
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#building-documentation">
-   Building documentation
+  <a class="reference internal nav-link" href="#build-documentation">
+   Build documentation
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#posting-issues">
-   Posting issues
+  <a class="reference internal nav-link" href="#post-issues">
+   Post issues
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#adhering-to-code-style">
-   Adhering to code style
+  <a class="reference internal nav-link" href="#adhere-to-code-style">
+   Adhere to code style
   </a>
  </li>
 </ul>
@@ -258,16 +258,16 @@
                 
   <section id="contributing">
 <span id="ref-contributing"></span><h1>Contributing<a class="headerlink" href="#contributing" title="Permalink to this headline">#</a></h1>
-<p>Overall guidance on contributing to a PyAnsys library appears in the
-<a class="reference external" href="https://dev.docs.pyansys.com/how-to/contributing.html">Contributing</a> topic
-in the <em>PyAnsys Developer’s Guide</em>. Ensure that you are thoroughly familiar with
-it and <a class="reference external" href="https://dev.docs.pyansys.com/coding-style/index.html#coding-style">Coding Style</a> before attempting to
-contribute to PyFluent-Visualization.</p>
+<p>Overall guidance on contributing to a PyAnsys library appears in
+<a class="reference external" href="https://dev.docs.pyansys.com/how-to/contributing.html">Contributing</a>
+in the <em>PyAnsys Developer’s Guide</em>. Ensure that you are thoroughly
+familiar with this guide, paying particular attention to <a class="reference external" href="https://dev.docs.pyansys.com/coding-style/index.html#coding-style">Coding Style</a>,
+before attempting to contribute to PyFluent-Visualization.</p>
 <p>The following contribution information is specific to PyFluent-Visualization.</p>
-<section id="cloning-the-repository">
-<h2>Cloning the repository<a class="headerlink" href="#cloning-the-repository" title="Permalink to this headline">#</a></h2>
-<p>Run this code to clone and install the latest version of PyFluent-Visualization in
-development mode:</p>
+<section id="clone-the-repository">
+<h2>Clone the repository<a class="headerlink" href="#clone-the-repository" title="Permalink to this headline">#</a></h2>
+<p>To clone and install the latest version of PyFluent-Visualization in
+development mode, run:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">pyansys</span><span class="o">/</span><span class="n">pyfluent</span><span class="o">-</span><span class="n">visualization</span><span class="o">.</span><span class="n">git</span>
 <span class="n">cd</span> <span class="n">pyfluent</span><span class="o">-</span><span class="n">visualization</span>
 <span class="n">pip</span> <span class="n">install</span> <span class="n">pip</span> <span class="o">-</span><span class="n">U</span>
@@ -275,8 +275,8 @@ development mode:</p>
 </pre></div>
 </div>
 </section>
-<section id="building-documentation">
-<h2>Building documentation<a class="headerlink" href="#building-documentation" title="Permalink to this headline">#</a></h2>
+<section id="build-documentation">
+<h2>Build documentation<a class="headerlink" href="#build-documentation" title="Permalink to this headline">#</a></h2>
 <p>To build the PyFluent-Visualization documentation locally, in the root
 directory of the repository, run:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements</span><span class="o">/</span><span class="n">requirements_doc</span><span class="o">.</span><span class="n">txt</span>
@@ -285,31 +285,32 @@ directory of the repository, run:</p>
 </pre></div>
 </div>
 <p>After the build completes, the HTML documentation is located in the
-<code class="docutils literal notranslate"><span class="pre">_builds/html</span></code> directory and you can load the <code class="docutils literal notranslate"><span class="pre">index.html</span></code> into a web
-browser. To clean the documentation, execute:</p>
+<code class="docutils literal notranslate"><span class="pre">_builds/html</span></code> directory. You can load the <code class="docutils literal notranslate"><span class="pre">index.html</span></code> in this
+directory into a web browser.</p>
+<p>You can clear all HTML files from the <code class="docutils literal notranslate"><span class="pre">_builds/html</span></code> directory with:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">clean</span>
 </pre></div>
 </div>
 </section>
-<section id="posting-issues">
-<h2>Posting issues<a class="headerlink" href="#posting-issues" title="Permalink to this headline">#</a></h2>
+<section id="post-issues">
+<h2>Post issues<a class="headerlink" href="#post-issues" title="Permalink to this headline">#</a></h2>
 <p>Use the <a class="reference external" href="https://github.com/pyansys/pyfluent-visualization/issues">PyFluent Visualization Issues</a>
 page to submit questions, report bugs, and request new features.</p>
 </section>
-<section id="adhering-to-code-style">
-<h2>Adhering to code style<a class="headerlink" href="#adhering-to-code-style" title="Permalink to this headline">#</a></h2>
-<p>PyFluent is compliant with <a class="reference external" href="https://dev.docs.pyansys.com/coding_style/index.html">PyAnsys Development Code Style Guide</a>.  Code style is checked
-by making use of <a class="reference external" href="https://pre-commit.com/">pre-commit</a>. Install this tool and
-activate it executing the following commands:</p>
+<section id="adhere-to-code-style">
+<h2>Adhere to code style<a class="headerlink" href="#adhere-to-code-style" title="Permalink to this headline">#</a></h2>
+<p>PyFluent-Visualization is compliant with the <a class="reference external" href="https://dev.docs.pyansys.com/coding-style/index.html">PyAnsys coding style</a>. It uses the
+tool <a class="reference external" href="https://pre-commit.com/">pre-commit</a> to check the code style.
+You can install and active this tool with:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python -m pip install pre-commit
 pre-commit install
 </pre></div>
 </div>
-<p>Then, you can use the <code class="docutils literal notranslate"><span class="pre">style</span></code> rule defined in the <code class="docutils literal notranslate"><span class="pre">Makefile</span></code>:</p>
+<p>You can then use the <code class="docutils literal notranslate"><span class="pre">style</span></code> rule defined in <code class="docutils literal notranslate"><span class="pre">Makefile</span></code> with:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>make style
 </pre></div>
 </div>
-<p>Or directly execute <a class="reference external" href="https://pre-commit.com/">pre-commit</a>:</p>
+<p>Or, you can directly run <a class="reference external" href="https://pre-commit.com/">pre-commit</a> with:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pre-commit run --all-files --show-diff-on-failure
 </pre></div>
 </div>

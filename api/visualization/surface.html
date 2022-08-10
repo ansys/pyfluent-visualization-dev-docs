@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Surface &#8212; pyfluent-visualization</title>
+    <title>Surface &#8212; PyFluent-Visualization</title>
     
 <script>
   document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
@@ -172,7 +172,7 @@
         <li class="nav-item nav-item-additional-breadcrumb"><a href="https://docs.pyansys.com/">PyAnsys</a> » </li>
     
     
-        <li class="nav-item nav-item-0"><a href="../../index.html">pyfluent-visualization</a> » </li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">PyFluent-Visualization</a> » </li>
     
 
           <li class="nav-item nav-item-1"><a href="../index.html" >API reference</a> » </li>
@@ -319,18 +319,25 @@
 <span class="target" id="post-surface"></span><dl class="py class">
 <dt class="sig sig-object py" id="ansys.fluent.visualization.pyvista.pyvista_objects.Surface">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ansys.fluent.visualization.pyvista.pyvista_objects.</span></span><span class="sig-name descname"><span class="pre">Surface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parent</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">api_helper</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.fluent.visualization.pyvista.pyvista_objects.Surface" title="Permalink to this definition">#</a></dt>
-<dd><p>Surface graphics.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">ansys.fluent.visualization.pyvista</span> <span class="kn">import</span>  <span class="n">Graphics</span>
-
-<span class="n">graphics_session</span> <span class="o">=</span> <span class="n">Graphics</span><span class="p">(</span><span class="n">session</span><span class="p">)</span>
-<span class="n">surface1</span> <span class="o">=</span> <span class="n">graphics_session</span><span class="o">.</span><span class="n">Surfaces</span><span class="p">[</span><span class="s2">&quot;surface-1&quot;</span><span class="p">]</span>
-<span class="n">surface1</span><span class="o">.</span><span class="n">definition</span><span class="o">.</span><span class="n">type</span> <span class="o">=</span> <span class="s2">&quot;iso-surface&quot;</span>
-<span class="n">surface1</span><span class="o">.</span><span class="n">definition</span><span class="o">.</span><span class="n">iso_surface</span><span class="o">.</span><span class="n">field</span><span class="o">=</span> <span class="s2">&quot;velocity-magnitude&quot;</span>
-<span class="n">surface1</span><span class="o">.</span><span class="n">definition</span><span class="o">.</span><span class="n">iso_surface</span><span class="o">.</span><span class="n">rendering</span><span class="o">=</span> <span class="s2">&quot;contour&quot;</span>
-<span class="n">surface1</span><span class="o">.</span><span class="n">definition</span><span class="o">.</span><span class="n">iso_surface</span><span class="o">.</span><span class="n">iso_value</span> <span class="o">=</span> <span class="mf">0.0</span>
-<span class="n">surface1</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="s2">&quot;window-0&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
+<dd><p>Provides for displaying surface graphics.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl>
+<dt><strong>name</strong></dt><dd></dd>
+<dt><strong>parent</strong></dt><dd></dd>
+<dt><strong>api_helper</strong></dt><dd></dd>
+<dt><strong>.. code-block:: python</strong></dt><dd><p>from ansys.fluent.visualization.pyvista import Graphics</p>
+<p>graphics_session = Graphics(session)
+surface1 = graphics_session.Surfaces[“surface-1”]
+surface1.definition.type = “iso-surface”
+surface1.definition.iso_surface.field= “velocity-magnitude”
+surface1.definition.iso_surface.rendering= “contour”
+surface1.definition.iso_surface.iso_value = 0.0
+surface1.display(“window-0”)</p>
+</dd>
+</dl>
+</dd>
+</dl>
 <p class="rubric">Attributes</p>
 <table class="table">
 <colgroup>
