@@ -75,12 +75,12 @@ files.
         filename="exhaust_system.dat.h5", directory="pyfluent/exhaust_system"
     )
 
-    session = pyfluent.launch_fluent(
-        precision="double", processor_count=2, start_transcript=False
+    solver_session = pyfluent.launch_fluent(
+        precision="double", processor_count=2, start_transcript=False, mode="solver"
     )
 
-    session.solver.tui.file.read_case(case_file_name=import_case)
-    session.solver.tui.file.read_data(case_file_name=import_data)
+    solver_session.tui.file.read_case(case_file_name=import_case)
+    solver_session.tui.file.read_data(case_file_name=import_data)
 
 
 
@@ -100,7 +100,7 @@ Get the graphics object.
 .. code-block:: default
 
 
-    graphics = Graphics(session=session)
+    graphics = Graphics(session=solver_session)
 
 
 
@@ -489,7 +489,7 @@ Create the plot object for the session.
 .. code-block:: default
 
 
-    plots_session_1 = Plots(session)
+    plots_session_1 = Plots(solver_session)
 
 
 
@@ -575,7 +575,7 @@ Create and display the residual plot.
 .. code-block:: default
 
 
-    matplotlib_plots1 = Plots(session)
+    matplotlib_plots1 = Plots(solver_session)
     residual = matplotlib_plots1.Monitors["residual"]
     residual.monitor_set_name = "residual"
     residual.plot("window-10")
@@ -603,15 +603,15 @@ Solve and plot solution monitors.
 .. code-block:: default
 
 
-    session.solver.tui.solve.initialize.hyb_initialization()
-    session.solver.tui.solve.set.number_of_iterations(50)
-    session.solver.tui.solve.iterate()
-    matplotlib_plots1 = Plots(session)
+    solver_session.tui.solve.initialize.hyb_initialization()
+    solver_session.tui.solve.set.number_of_iterations(50)
+    solver_session.tui.solve.iterate()
+    matplotlib_plots1 = Plots(solver_session)
     mass_bal_rplot = matplotlib_plots1.Monitors["mass-bal-rplot"]
     mass_bal_rplot.monitor_set_name = "mass-bal-rplot"
     mass_bal_rplot.plot("window-11")
 
-    matplotlib_plots1 = Plots(session)
+    matplotlib_plots1 = Plots(solver_session)
     point_vel_rplot = matplotlib_plots1.Monitors["point-vel-rplot"]
     point_vel_rplot.monitor_set_name = "point-vel-rplot"
     point_vel_rplot.plot("window-12")
@@ -651,7 +651,7 @@ Close Fluent.
 .. code-block:: default
 
 
-    session.exit()
+    solver_session.exit()
 
 
 
@@ -662,7 +662,7 @@ Close Fluent.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 2 minutes  42.014 seconds)
+   **Total running time of the script:** ( 2 minutes  26.233 seconds)
 
 
 .. _sphx_glr_download_examples_00-postprocessing_post_processing_exhaust_manifold.py:

@@ -54,7 +54,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="User guide" href="../users_guide/index.html" />
-    <link rel="prev" title="PyFluent-Visualization documentation 0.4.0" href="../index.html" />
+    <link rel="prev" title="PyFluent-Visualization documentation 0.5.dev0" href="../index.html" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="docsearch:language" content="None">
   </head>
@@ -280,7 +280,7 @@ the Python kernel.</p>
 <h2>Launch Fluent<a class="headerlink" href="#launch-fluent" title="Permalink to this headline">#</a></h2>
 <p>You can launch Fluent from PyFluent using the <code class="docutils literal notranslate"><span class="pre">launch_fluent</span></code> function:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">ansys.fluent.core</span> <span class="k">as</span> <span class="nn">pyfluent</span>
-<span class="n">session</span> <span class="o">=</span> <span class="n">pyfluent</span><span class="o">.</span><span class="n">launch_fluent</span><span class="p">(</span><span class="n">precision</span><span class="o">=</span><span class="s2">&quot;double&quot;</span><span class="p">,</span> <span class="n">processor_count</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">session</span> <span class="o">=</span> <span class="n">pyfluent</span><span class="o">.</span><span class="n">launch_fluent</span><span class="p">(</span><span class="n">precision</span><span class="o">=</span><span class="s2">&quot;double&quot;</span><span class="p">,</span> <span class="n">processor_count</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s2">&quot;solver&quot;</span><span class="p">)</span>
 <span class="n">session</span><span class="o">.</span><span class="n">check_health</span><span class="p">()</span>
 <span class="n">session</span><span class="o">.</span><span class="n">start_transcript</span><span class="p">()</span> <span class="c1"># Streaming the transcript locally</span>
 </pre></div>
