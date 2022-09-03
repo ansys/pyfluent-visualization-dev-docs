@@ -79,8 +79,8 @@ files.
         precision="double", processor_count=2, start_transcript=False, mode="solver"
     )
 
-    solver_session.tui.file.read_case(case_file_name=import_case)
-    solver_session.tui.file.read_data(case_file_name=import_data)
+    solver_session.tui.file.read_case(import_case)
+    solver_session.tui.file.read_data(import_data)
 
 
 
@@ -662,7 +662,7 @@ Close Fluent.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 3 minutes  9.775 seconds)
+   **Total running time of the script:** ( 2 minutes  45.920 seconds)
 
 
 .. _sphx_glr_download_examples_00-postprocessing_post_processing_exhaust_manifold.py:
