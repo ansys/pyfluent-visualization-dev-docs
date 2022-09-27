@@ -662,28 +662,23 @@ Close Fluent.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 2 minutes  38.282 seconds)
+   **Total running time of the script:** ( 2 minutes  51.468 seconds)
 
 
 .. _sphx_glr_download_examples_00-postprocessing_post_processing_exhaust_manifold.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
+    .. container:: sphx-glr-download sphx-glr-download-python
 
-  .. container:: sphx-glr-download sphx-glr-download-python
+      :download:`Download Python source code: post_processing_exhaust_manifold.py <post_processing_exhaust_manifold.py>`
 
-     :download:`Download Python source code: post_processing_exhaust_manifold.py <post_processing_exhaust_manifold.py>`
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
-
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: post_processing_exhaust_manifold.ipynb <post_processing_exhaust_manifold.ipynb>`
+      :download:`Download Jupyter notebook: post_processing_exhaust_manifold.ipynb <post_processing_exhaust_manifold.ipynb>`
 
 
 .. only:: html
