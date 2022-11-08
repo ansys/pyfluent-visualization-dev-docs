@@ -321,6 +321,11 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#create-pathlines">
+   Create Pathlines
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#create-plot-object">
    Create plot object
   </a>
@@ -568,12 +573,23 @@ files.</p>
 <h2>Create vector<a class="headerlink" href="#create-vector" title="Permalink to this heading">#</a></h2>
 <p>Create a vector on a predefined surface.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">velocity_vector</span> <span class="o">=</span> <span class="n">graphics</span><span class="o">.</span><span class="n">Vectors</span><span class="p">[</span><span class="s2">&quot;velocity-vector&quot;</span><span class="p">]</span>
+<span class="n">velocity_vector</span><span class="o">.</span><span class="n">field</span> <span class="o">=</span> <span class="s2">&quot;pressure&quot;</span>
 <span class="n">velocity_vector</span><span class="o">.</span><span class="n">surfaces_list</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;solid_up:1:830&quot;</span><span class="p">]</span>
 <span class="n">velocity_vector</span><span class="o">.</span><span class="n">scale</span> <span class="o">=</span> <span class="mi">2</span>
 <span class="n">velocity_vector</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="s2">&quot;window-8&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 <img src="../../_images/sphx_glr_post_processing_exhaust_manifold_011.png" srcset="../../_images/sphx_glr_post_processing_exhaust_manifold_011.png" alt="post processing exhaust manifold" class = "sphx-glr-single-img"/></section>
+<section id="create-pathlines">
+<h2>Create Pathlines<a class="headerlink" href="#create-pathlines" title="Permalink to this heading">#</a></h2>
+<p>Create a pathlines on a predefined surface.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pathlines</span> <span class="o">=</span> <span class="n">graphics</span><span class="o">.</span><span class="n">Pathlines</span><span class="p">[</span><span class="s2">&quot;pathlines&quot;</span><span class="p">]</span>
+<span class="n">pathlines</span><span class="o">.</span><span class="n">field</span> <span class="o">=</span> <span class="s2">&quot;velocity-magnitude&quot;</span>
+<span class="n">pathlines</span><span class="o">.</span><span class="n">surfaces_list</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;inlet&quot;</span><span class="p">,</span> <span class="s2">&quot;inlet1&quot;</span><span class="p">,</span> <span class="s2">&quot;inlet2&quot;</span><span class="p">]</span>
+<span class="c1"># pathlines.display(&quot;window-9&quot;)</span>
+</pre></div>
+</div>
+</section>
 <section id="create-plot-object">
 <h2>Create plot object<a class="headerlink" href="#create-plot-object" title="Permalink to this heading">#</a></h2>
 <p>Create the plot object for the session.</p>
@@ -641,7 +657,7 @@ files.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">solver_session</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
 </pre></div>
 </div>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 3 minutes  17.230 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 2 minutes  22.153 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-examples-00-postprocessing-post-processing-exhaust-manifold-py">
 <div class="sphx-glr-download sphx-glr-download-python docutils container">
 <p><a class="reference download internal" download="" href="../../_downloads/9a025ab8fd5ec8428ac9b49a6901877e/post_processing_exhaust_manifold.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">post_processing_exhaust_manifold.py</span></code></a></p>
